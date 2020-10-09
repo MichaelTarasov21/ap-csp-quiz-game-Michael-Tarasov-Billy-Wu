@@ -1,0 +1,5 @@
+add a fifth option that says "Don't Know"-> make it if they click "Don't Know" for ALL of the questions, give them a pity point of 1 as the end score.
+answering correctly follows up with a "why" before giving the option to move the next question.
+questions operate on learning, where information provided in previous questions can maybe help you answer the next ones.
+maybe audio for getting it correct and getting it wrong?
+maybe voice for questions and answers and the "why" part?
