@@ -1,2 +1,2 @@
 console.log("Javascript initialized");
-document.getElementById(Row1).innerHTML(`<button></button>`)
+document.getElementById(`row1`).innerHTML = `<button></button>`
