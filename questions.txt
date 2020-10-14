@@ -1,0 +1,71 @@
+1.What are IVs?
+A. Injected Values 
+B. Individual Values
+C. Indeterminant Values
+D. Don't Exist
+E. Don't Know
+
+B
+
+2.Follow up Question:
+How many IVs can exist in a single stat?
+String Answer: 31
+Optional Answer: Don't Know
+
+3.What are EVs?
+A. Effort Values
+B. Energy Values
+C. Entertaining Values
+D. Don't Exist
+E. Don't Know
+
+A
+4.Follow up Question 2:
+How many total EVs can you have on a pokemon?
+String Answer: 510
+
+5.How many of those EVs can be used?
+String Answer: 508
+
+6.Do DVs exist?
+A. True
+B. False	
+C. Don't Know
+
+A
+
+7.Do HVs exist?
+A. True
+B. False
+C. Don't Know
+
+B
+
+8.Who controls the pokemon ranking and tiers?
+A. Nintendo
+B. Game Freak
+C. SMOGON
+D. DOSUKE
+E. Don't Know
+
+C
+
+9.Which non-legendary pokemon got banned FIRST from OU, the most popular format.
+A. Garchomp
+B. Wobbuffet
+C. Salamence
+D. Kangaskhan
+E. Don't Know
+
+B
+
+10.Which pokemon FIRST OUTCLASSED its evolution?
+A. Chansey
+B. Dusclops
+C. Porygon
+D. None
+E. Don't Know
+
+B
+
+11.
