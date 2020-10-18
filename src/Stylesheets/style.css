@@ -11,6 +11,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+button{
+  background-color: aqua;
+}
 .row {
   width: 100%;
   display: flex;
