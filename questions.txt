@@ -28,15 +28,15 @@ String Answer: 510
 String Answer: 508
 
 6.Do DVs exist?
-A. True
-B. False	
+A. Yes
+B. No	
 C. Don't Know
 
 A
 
 7.Do HVs exist?
-A. True
-B. False
+A. Yes
+B. No
 C. Don't Know
 
 B
