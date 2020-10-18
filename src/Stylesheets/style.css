@@ -1,0 +1,25 @@
+html {
+  font-size: 62.5%;
+}
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  font-size: 400%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: .1%;
+}
+.question {
+  width: 15%;
+  padding: 1%;
+}
