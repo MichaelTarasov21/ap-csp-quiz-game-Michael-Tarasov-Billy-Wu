@@ -17,9 +17,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   padding: .1%;
 }
 .question {
   width: 15%;
-  padding: 1%;
+  padding: 2%;
 }
