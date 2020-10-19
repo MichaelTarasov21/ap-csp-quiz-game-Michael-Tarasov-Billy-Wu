@@ -1,47 +1,42 @@
-1.What are IVs?
-A. Injected Values 
-B. Individual Values
-C. Indeterminant Values
-D. Don't Exist
-E. Don't Know
+1. How many pokemon were in the first game?
+String Answer: 151
+Don't Know
 
-B
-
-2.Follow up Question:
-How many IVs can exist in a single stat?
-String Answer: 31
-Optional Answer: Don't Know
-
-3.What are EVs?
-A. Effort Values
-B. Energy Values
-C. Entertaining Values
-D. Don't Exist
+2. When was pokemon FIRST released?
+A. 1996
+B. 1997
+C. 1998
+D. 1999
 E. Don't Know
 
 A
-4.Follow up Question 2:
-How many total EVs can you have on a pokemon?
-String Answer: 510
 
-5.How many of those EVs can be used?
-String Answer: 508
-
-6.Do DVs exist?
-A. Yes
-B. No	
-C. Don't Know
-
-A
-
-7.Do HVs exist?
+3. Can Pikachu learn Surf?
 A. Yes
 B. No
 C. Don't Know
 
+A
+
+4. Which pokemon has the highest base stat total(Adding up all the stats from HP to Speed)?
+A. Mega Rayquaza
+B. Mega Mewtwo X
+C. Mega Mewtwo Y
+D. All of the above
+E. Don't Know
+
+D
+
+5. How can (specific) pokemon change gender?
+A. Super Hidden Easter Eggs
+B. Evolving
+C. Trading
+D. Does not exist
+E. Don't Know
+
 B
 
-8.Who controls the pokemon ranking and tiers?
+6.Who controls the pokemon ranking and tiers?
 A. Nintendo
 B. Game Freak
 C. SMOGON
@@ -50,7 +45,7 @@ E. Don't Know
 
 C
 
-9.Which non-legendary pokemon got banned FIRST from OU, the most popular format.
+7.Which non-legendary pokemon got banned FIRST from OU, the most popular format.
 A. Garchomp
 B. Wobbuffet
 C. Salamence
@@ -59,13 +54,72 @@ E. Don't Know
 
 B
 
-10.Which pokemon FIRST OUTCLASSED its evolution?
+
+8.Which pokemon FIRST OUTCLASSED its evolution?
 A. Chansey
 B. Dusclops
 C. Porygon
 D. None
 E. Don't Know
 
+9. What is the most controversial mechanic in Pokemon?
+A. Hazards(Stealth Rock)
+B. Trapping(Shadow Tag and Arena Trap)
+C. Switching
+D. There is none
+E. Don't Know
+
 B
 
-11.
+
+B
+10.What are IVs?
+A. Injected Values 
+B. Individual Values
+C. Indeterminant Values
+D. Don't Exist
+E. Don't Know
+
+B
+
+11.Follow up Question:
+How many IVs can exist in a single stat?
+String Answer: 31
+Optional Answer: Don't Know
+
+12.What are EVs?
+A. Effort Values
+B. Energy Values
+C. Entertaining Values
+D. Don't Exist
+E. Don't Know
+
+A
+13.Follow up Question 2:
+How many total EVs can you have on a pokemon?
+String Answer: 510
+
+14.How many of those EVs can be used?
+String Answer: 508
+
+15.Do DVs exist?
+A. Yes
+B. No	
+C. Don't Know
+
+A
+
+16.Do HVs exist?
+A. Yes
+B. No
+C. Don't Know
+
+B
+
+
+
+
+
+
+
+
