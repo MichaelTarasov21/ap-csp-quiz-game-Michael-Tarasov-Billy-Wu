@@ -1,8 +1,8 @@
-1. How many pokemon were in the first game?
+1. How many pokemon were in the first game? (General)
 String Answer: 151
 Don't Know
 
-2. When was pokemon FIRST released?
+2. When was pokemon FIRST released? (General)
 A. 1996
 B. 1997
 C. 1998
@@ -11,14 +11,14 @@ E. Don't Know
 
 A
 
-3. Can Pikachu learn Surf?
+3. Can Pikachu learn Surf? (General/Competitive)
 A. Yes
 B. No
 C. Don't Know
 
 A
 
-4. Which pokemon has the highest base stat total(Adding up all the stats from HP to Speed)?
+4. Which pokemon has the highest base stat total(Adding up all the stats from HP to Speed)? (General/Competitive)
 A. Mega Rayquaza
 B. Mega Mewtwo X
 C. Mega Mewtwo Y
@@ -27,7 +27,7 @@ E. Don't Know
 
 D
 
-5. How can (specific) pokemon change gender?
+5. How can (specific) pokemon change gender? (General)
 A. Super Hidden Easter Eggs
 B. Evolving
 C. Trading
@@ -36,7 +36,7 @@ E. Don't Know
 
 B
 
-6.Who controls the pokemon ranking and tiers?
+6.Who controls the pokemon ranking and tiers? (Competitive)
 A. Nintendo
 B. Game Freak
 C. SMOGON
@@ -45,7 +45,7 @@ E. Don't Know
 
 C
 
-7.Which non-legendary pokemon got banned FIRST from OU, the most popular format.
+7.Which non-legendary pokemon got banned FIRST from OU, the most popular format? (Competitive)
 A. Garchomp
 B. Wobbuffet
 C. Salamence
@@ -55,14 +55,14 @@ E. Don't Know
 B
 
 
-8.Which pokemon FIRST OUTCLASSED its evolution?
+8.Which pokemon FIRST OUTCLASSED its evolution(in terms of the tiers)? (Competitive)
 A. Chansey
 B. Dusclops
 C. Porygon
 D. None
 E. Don't Know
 
-9. What is the most controversial mechanic in Pokemon?
+9. What is the most controversial mechanic in Pokemon? (Competitive)
 A. Hazards(Stealth Rock)
 B. Trapping(Shadow Tag and Arena Trap)
 C. Switching
@@ -73,7 +73,7 @@ B
 
 
 B
-10.What are IVs?
+10.What are IVs? (Competitive)
 A. Injected Values 
 B. Individual Values
 C. Indeterminant Values
@@ -82,12 +82,12 @@ E. Don't Know
 
 B
 
-11.Follow up Question:
+11.Follow up Question: (Competitive)
 How many IVs can exist in a single stat?
 String Answer: 31
 Optional Answer: Don't Know
 
-12.What are EVs?
+12.What are EVs? (Competitive)
 A. Effort Values
 B. Energy Values
 C. Entertaining Values
@@ -95,21 +95,21 @@ D. Don't Exist
 E. Don't Know
 
 A
-13.Follow up Question 2:
+13.Follow up Question 2: (Competitive)
 How many total EVs can you have on a pokemon?
 String Answer: 510
 
-14.How many of those EVs can be used?
+14.How many of those EVs can be used? (Competitive)
 String Answer: 508
 
-15.Do DVs exist?
+15.Do DVs exist? (Competitive)
 A. Yes
 B. No	
 C. Don't Know
 
 A
 
-16.Do HVs exist?
+16.Do HVs exist? (Competitive)
 A. Yes
 B. No
 C. Don't Know
