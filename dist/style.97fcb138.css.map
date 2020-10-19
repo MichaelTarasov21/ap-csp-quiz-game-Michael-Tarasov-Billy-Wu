@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACE;EACA","file":"style.97fcb138.css","sourceRoot":"..\\src","sourcesContent":["body {\r\n  background-color: blue;\r\n  height: 95vh;\r\n}\r\n"]}
