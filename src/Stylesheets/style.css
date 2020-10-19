@@ -19,9 +19,12 @@ button{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: .1%;
 }
 .question {
   width: 15%;
   padding: 2%;
+}
+.category{
+  width: 12%;
+  text-align: center;
 }
