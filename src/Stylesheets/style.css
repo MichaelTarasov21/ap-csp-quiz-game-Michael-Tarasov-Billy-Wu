@@ -26,13 +26,12 @@ button{
   text-shadow: -1.25px -1.25px 0 blue, 1.25px -1.25px 0 blue, -1.25px 1.25px 0 blue, 1.25px 1.25px 0 blue;
   color: yellow;
   width: 15%;
-  padding: 2%;
+  padding: 1.5%;
 }
 .category{
   color:white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 15%;
-
   text-align: center;
 }
 #score{
