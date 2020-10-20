@@ -1,6 +1,6 @@
 var questions = [
   {
-    qprompt: "How many pokemon were in the first game?",
+    qprompt: "How many Pokémon were in the first game?",
     c1: "A) 100",
     c2: "B) 151",
     c3: "C) 150",
@@ -9,7 +9,7 @@ var questions = [
     answered: false,
   },
   {
-    qprompt: "When was pokemon FIRST released?",
+    qprompt: "When was Pokémon FIRST released?",
     c1: "A) 1996",
     c2: "B) 1997",
     c3: "C) 1998",
@@ -27,7 +27,7 @@ var questions = [
     answered: false,
   },
   {
-    qprompt: "How can (specific) pokemon change gender?",
+    qprompt: "How can (specific) Pokémon change gender?",
     c1: "A)Super Hidden Easter Eggs",
     c2: "B) Evolving",
     c3: "C) Trading",
@@ -37,7 +37,7 @@ var questions = [
   },
   {
     qprompt:
-      "Which pokemon has the highest base stat total(Adding up all the stats from HP to Speed)?",
+      "Which Pokémon has the highest base stat total(Adding up all the stats from HP to Speed)?",
     c1: "A) Mega Rayquaza",
     c2: "B) Mega Mewtwo X",
     c3: "C) Mega Mewtwo Y",
@@ -47,7 +47,7 @@ var questions = [
   },
   {
     qprompt:
-      "Which trait affects your pokemon's stats PERMANENTLY(Before Battle)?",
+      "Which trait affects your Pokémon's stats PERMANENTLY(Before Battle)?",
     c1: "A) Beauty",
     c2: "B) Abilities",
     c3: "C) Nature",
@@ -74,7 +74,7 @@ var questions = [
     answered: false,
   },
   {
-    qprompt: "Who controls the pokemon ranking and tiers?",
+    qprompt: "Who controls the Pokémon ranking and tiers?",
     c1: "A) Nintendo",
     c2: "B) Game Freak",
     c3: "C) SMOGON",
@@ -84,7 +84,7 @@ var questions = [
   },
   {
     qprompt:
-      "Which non-legendary pokemon got banned FIRST from OU, the most popular format?",
+      "Which non-legendary Pokémon got banned FIRST from OU, the most popular format?",
     c1: "A) Garchomp",
     c2: "B) Wobbuffet",
     c3: "C) Salamence",
@@ -94,7 +94,7 @@ var questions = [
   },
   {
     qprompt:
-      "Which pokemon FIRST OUTCLASSED its evolution(in terms of the tiers)?",
+      "Which Pokémon FIRST OUTCLASSED its evolution(in terms of the tiers)?",
     c1: "A) Chansey",
     c2: "B) Porygon",
     c3: "C) Dusclops",
@@ -103,7 +103,7 @@ var questions = [
     answered: false,
   },
   {
-    qprompt: "What is the most controversial mechanic in Pokemon?", //This is kinda an opinion question. Billy- Well yes but actually no because only one of these mechanics got banned.
+    qprompt: "What is the most controversial mechanic in Pokémon?", //This is kinda an opinion question. Billy- Well yes but actually no because only one of these mechanics got banned.
     c1: "A) Hazards(Stealth Rock)",
     c2: "B) Trapping(Shadow Tag and Arena Trap)",
     c3: "C) Switching",
@@ -112,27 +112,27 @@ var questions = [
     answered: false,
   },
   {
-    qprompt:
-      "How many IVs can exist in a single stat?",
-    c1: "A) 23",
-    c2: "B) 31",
-    c3: "C) 256",
-    c4: "D) 510",
+    qprompt: "How many IVs can exist in a single stat?",
+
+    c1: "23",
+    c2: "31",
+    c3: "256",
+    c4: "510",
     answer: "B",
     answered: false,
   },
   {
-    qprompt:
-      "How many total EVs can you have on a pokemon?",
-    c1: "A) 23",
-    c2: "B) 31",
-    c3: "C) 256",
-    c4: "D) 510",
+    qprompt: "How many total EVs can you have on a Pokémon?",
+    c1: "23",
+    c2: "31",
+    c3: "256",
+    c4: "510",
     answer: "D",
     answered: false,
   },
   {
-    qprompt: "How many EVs can be converted to actual stats, assuming your pokemon is LVL 100?",
+    qprompt:
+      "How many EVs can be converted to actual stats, assuming your Pokémon is LVL 100?",
     c1: "A) 507",
     c2: "B) 508",
     c3: "C) 509",
