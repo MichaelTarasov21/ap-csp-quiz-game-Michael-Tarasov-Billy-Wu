@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-button{
+button {
   background-color: aqua;
 }
 .row {
@@ -22,35 +22,37 @@ button{
   justify-content: space-around;
 }
 .points {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-shadow: -1.25px -1.25px 0 blue, 1.25px -1.25px 0 blue, -1.25px 1.25px 0 blue, 1.25px 1.25px 0 blue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: -1.25px -1.25px 0 blue, 1.25px -1.25px 0 blue,
+    -1.25px 1.25px 0 blue, 1.25px 1.25px 0 blue;
   color: yellow;
   width: 15%;
   padding: 1.5%;
 }
-.category{
-  color:white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.category {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   width: 15%;
   text-align: center;
 }
-#score{
+#score {
   padding-top: 3%;
   color: white;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.question{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.question {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: yellow;
-  text-shadow: -1.25px -1.25px 0 blue, 1.25px -1.25px 0 blue, -1.25px 1.25px 0 blue, 1.25px 1.25px 0 blue;
+  text-shadow: -1.25px -1.25px 0 blue, 1.25px -1.25px 0 blue,
+    -1.25px 1.25px 0 blue, 1.25px 1.25px 0 blue;
   text-transform: uppercase;
 }
-.category{
+.category {
   width: 12%;
   text-align: center;
 }
 
-.choice{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.choice {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }

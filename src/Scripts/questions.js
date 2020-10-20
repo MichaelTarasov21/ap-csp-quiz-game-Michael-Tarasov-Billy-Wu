@@ -113,7 +113,6 @@ var questions = [
   },
   {
     qprompt: "How many IVs can exist in a single stat?",
-
     c1: "23",
     c2: "31",
     c3: "256",

@@ -1,9 +1,9 @@
 import { questions } from "./questions.js";
 var points = 0;
-const category1 = "BASICS"
-const category2 = "STATS"
-const category3 = "COMPETITIVE"
-const category4 = "VALUES"
+const category1 = "BASICS";
+const category2 = "STATS";
+const category3 = "COMPETITIVE";
+const category4 = "VALUES";
 function loadquestionselectionpage() {
   document.body.innerHTML = `<div class="row" id="row1">
     <div class="category">${category1}</div>
@@ -22,7 +22,17 @@ function loadquestionselectionpage() {
     <div class="row" id="score"></div>`;
   let i;
   for (i = 0; i < 4; i++) {
-    document.getElementById(`row${i+2}`).innerHTML = `<button class="points question" id="q${1 + i}">${1 + i}00</button> <button class="points question" id="q${5 + i}">${1 + i}00</button> <button class="points question" id="q${9 + i}">${i + 1}00</button> <button class="points question" id="q${13 + i}">${1 + i}00</button>` 
+    document.getElementById(
+      `row${i + 2}`
+    ).innerHTML = `<button class="points question" id="q${1 + i}">${
+      1 + i
+    }00</button> <button class="points question" id="q${5 + i}">${
+      1 + i
+    }00</button> <button class="points question" id="q${9 + i}">${
+      i + 1
+    }00</button> <button class="points question" id="q${13 + i}">${
+      1 + i
+    }00</button>`;
   }
   document.getElementById("score").innerHTML = `SCORE:${points}`;
 }
