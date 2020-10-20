@@ -114,20 +114,20 @@ var questions = [
   {
     qprompt:
       "How many IVs can exist in a single stat?",
-    c1: "23",
-    c2: "31",
-    c3: "256",
-    c4: "510",
+    c1: "A) 23",
+    c2: "B) 31",
+    c3: "C) 256",
+    c4: "D) 510",
     answer: "B",
     answered: false,
   },
   {
     qprompt:
       "How many total EVs can you have on a pokemon?",
-    c1: "23",
-    c2: "31",
-    c3: "256",
-    c4: "510",
+    c1: "A) 23",
+    c2: "B) 31",
+    c3: "C) 256",
+    c4: "D) 510",
     answer: "D",
     answered: false,
   },
