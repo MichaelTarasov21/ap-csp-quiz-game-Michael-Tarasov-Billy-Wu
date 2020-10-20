@@ -32,6 +32,7 @@ button{
   color:white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 15%;
+
   text-align: center;
 }
 #score{
@@ -45,6 +46,9 @@ button{
   color: yellow;
   text-shadow: -1.25px -1.25px 0 blue, 1.25px -1.25px 0 blue, -1.25px 1.25px 0 blue, 1.25px 1.25px 0 blue;
   text-transform: uppercase;
+}
+.category{
+  width: 12%;
   text-align: center;
 }
 

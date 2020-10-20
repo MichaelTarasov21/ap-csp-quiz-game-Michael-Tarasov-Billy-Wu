@@ -1,4 +1,3 @@
-
 var questions = [
   {
     qprompt: "How many Pokémon were in the first game?",
@@ -38,6 +37,7 @@ var questions = [
   },
   {
     qprompt:
+
       "Which Pokémon has the highest base stat total(Adding up all the stats from HP to Speed)?",
     c1: "A) Mega Rayquaza",
     c2: "B) Mega Mewtwo X",
@@ -75,6 +75,7 @@ var questions = [
     answered: false,
   },
   {
+
     qprompt: "Who controls the Pokémon ranking and tiers?",
     c1: "A) Nintendo",
     c2: "B) Game Freak",
@@ -85,6 +86,7 @@ var questions = [
   },
   {
     qprompt:
+
       "Which non-legendary Pokémon got banned FIRST from OU, the most popular format?",
     c1: "A) Garchomp",
     c2: "B) Wobbuffet",
@@ -95,6 +97,7 @@ var questions = [
   },
   {
     qprompt:
+
       "Which Pokémon FIRST OUTCLASSED its evolution(in terms of the tiers)?",
     c1: "A) Chansey",
     c2: "B) Porygon",
@@ -115,6 +118,7 @@ var questions = [
   {
     qprompt:
       "How many IVs can exist in a single stat?",
+
     c1: "23",
     c2: "31",
     c3: "256",
