@@ -103,7 +103,7 @@ var questions = [
     answered: false,
   },
   {
-    qprompt: "What is the most controversial mechanic in Pokemon?", //This is kinda an opinion question
+    qprompt: "What is the most controversial mechanic in Pokemon?", //This is kinda an opinion question. Billy- Well yes but actually no because only one of these mechanics got banned.
     c1: "A) Hazards(Stealth Rock)",
     c2: "B) Trapping(Shadow Tag and Arena Trap)",
     c3: "C) Switching",
@@ -132,11 +132,11 @@ var questions = [
     answered: false,
   },
   {
-    qprompt: "How many EVs can be used?",
-    c1: "A) 307",
-    c2: "B) 308",
-    c3: "C) 309",
-    c4: "D) 310",
+    qprompt: "How many EVs can be converted to actual stats, assuming your pokemon is LVL 100?",
+    c1: "A) 507",
+    c2: "B) 508",
+    c3: "C) 509",
+    c4: "D) 510",
     answer: "B",
     answered: false,
   },
@@ -145,8 +145,8 @@ var questions = [
     c1: "A) Yes",
     c2: "B) No",
     c3: "C) Yes but only in fan games",
-    c4: "D) Yes but only in gen 3",
-    answer: "A",
+    c4: "D) Yes but only in gen 1 and 2",
+    answer: "D",
     answered: false,
   },
 ];
