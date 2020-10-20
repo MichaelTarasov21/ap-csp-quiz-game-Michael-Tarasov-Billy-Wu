@@ -7,6 +7,7 @@ html {
   box-sizing: border-box;
 }
 body {
+  background-color: rgb(60, 60, 233);
   font-size: 400%;
   display: flex;
   flex-direction: column;
@@ -21,10 +22,15 @@ button{
   justify-content: space-around;
 }
 .question {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: yellow;
   width: 15%;
   padding: 2%;
 }
 .category{
-  width: 12%;
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 15%;
   text-align: center;
 }
