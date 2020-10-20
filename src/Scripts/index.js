@@ -1,9 +1,9 @@
 import { questions } from "./questions.js";
 var points = 0;
-const category1 = "Basics"
-const category2 = "Stats"
-const category3 = "Competitive"
-const category4 = "Values"
+const category1 = "BASICS"
+const category2 = "STATS"
+const category3 = "COMPETITIVE"
+const category4 = "VALUES"
 function loadquestionselectionpage() {
   document.body.innerHTML = `<div class="row" id="row1">
     <div class="category">${category1}</div>
