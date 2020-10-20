@@ -4,6 +4,11 @@ const category1 = "BASICS";
 const category2 = "STATS";
 const category3 = "COMPETITIVE";
 const category4 = "VALUES";
+function startquestion(questionnum){
+  questions[questionnum].answered = true;
+  points = points + 100
+  loadquestionselectionpage()
+}
 function loadquestionselectionpage() {
   document.body.innerHTML = `<div class="row" id="row1">
     <div class="category">${category1}</div>
@@ -34,6 +39,13 @@ function loadquestionselectionpage() {
       1 + i
     }00</button>`;
   }
+  for (i = 0; i < 16; i++) {
+    if (questions[i].answered){
+      document.getElementById(`q${i+1}`).addEventListener("click", alert("You already tried this question. Please try another one."));
+    } else{
+      document.getElementById(`q${i+1}`).addEventListener("click", startquestion(i));
+    };
+  };
   document.getElementById("score").innerHTML = `SCORE:${points}`;
 }
 loadquestionselectionpage();
