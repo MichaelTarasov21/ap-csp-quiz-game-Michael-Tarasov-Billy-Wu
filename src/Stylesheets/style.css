@@ -7,6 +7,7 @@ html {
   box-sizing: border-box;
 }
 body {
+  background-color: rgb(68, 68, 240);
   font-size: 400%;
   display: flex;
   flex-direction: column;
@@ -20,11 +21,37 @@ button{
   flex-direction: row;
   justify-content: space-around;
 }
-.question {
+.points {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: -1.25px -1.25px 0 blue, 1.25px -1.25px 0 blue, -1.25px 1.25px 0 blue, 1.25px 1.25px 0 blue;
+  color: yellow;
   width: 15%;
   padding: 2%;
 }
 .category{
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 15%;
+
+  text-align: center;
+}
+#score{
+  padding-top: 3%;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.question{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: yellow;
+  text-shadow: -1.25px -1.25px 0 blue, 1.25px -1.25px 0 blue, -1.25px 1.25px 0 blue, 1.25px 1.25px 0 blue;
+  text-transform: uppercase;
+}
+.category{
   width: 12%;
   text-align: center;
+}
+
+.choice{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
