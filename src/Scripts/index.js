@@ -22,12 +22,12 @@ function startquestion(questionnum){
     points = points + 100;
     correct();
     setTimeout(loadCategories, 1500);
-    console.log(questions[6].answered)
+
   }
   else{
     wrong();
     setTimeout(loadCategories, 1500)
-    console.log(questions[questionnum].answered)
+
   }
 })
 document.getElementById("c2").addEventListener("click", function(){
@@ -36,12 +36,10 @@ document.getElementById("c2").addEventListener("click", function(){
   points = points + 100;
   correct();
   setTimeout(loadCategories, 1500);
-  console.log(questions[6].answered)
 }
 else{
   wrong();
   setTimeout(loadCategories, 1500)
-  console.log(questions[questionnum].answered)
 }
 })
 document.getElementById("c3").addEventListener("click", function(){
@@ -50,12 +48,10 @@ document.getElementById("c3").addEventListener("click", function(){
   points = points + 100;
   correct();
   setTimeout(loadCategories, 1500);
-  console.log(questions[6].answered)
 }
 else{
   wrong();
   setTimeout(loadCategories, 1500)
-  console.log(questions[questionnum].answered)
 }
 })
 document.getElementById("c4").addEventListener("click", function(){
@@ -64,12 +60,10 @@ document.getElementById("c4").addEventListener("click", function(){
   points = points + 100;
   correct();
   setTimeout(loadCategories, 1500);
-  console.log(questions[6].answered)
 }
 else{
   wrong();
   setTimeout(loadCategories, 1500)
-  console.log(questions[questionnum].answered)
 }
 })
 }
@@ -120,21 +114,20 @@ function loadCategories() {
   const q15 = document.getElementById("q15");
   const q16 = document.getElementById("q16");
 
-q1.addEventListener("click", function(){
-  if (questions[0].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(0)
-    console.log("worked");
-  }
-})
+  q1.addEventListener("click", function(){
+    if (questions[0].answered){
+      alert("You already did this question!");
+    }else{
+     startquestion(0)
+;
+    }
+  })
 
 q2.addEventListener("click", function(){
   if (questions[1].answered){
     alert("You already did this question!");
   }else{
     startquestion(1)
-    console.log("worked")
   }
 })
 q3.addEventListener("click", function(){
@@ -142,7 +135,6 @@ q3.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(2)
-    console.log("worked")
   }
 })
 q4.addEventListener("click", function(){
@@ -150,7 +142,6 @@ q4.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(3)
-    console.log("worked")
   }
 })
 q5.addEventListener("click", function(){
@@ -158,7 +149,6 @@ q5.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(4)
-    console.log("worked")
   }
 })
 q6.addEventListener("click", function(){
@@ -166,7 +156,6 @@ q6.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(5)
-    console.log("worked")
   }
 })
 q7.addEventListener("click", function(){
@@ -174,7 +163,6 @@ q7.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(6)
-    console.log("worked")
   }
 })
 q8.addEventListener("click", function(){
@@ -182,7 +170,6 @@ q8.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(7)
-    console.log("worked")
   }
 })
 q9.addEventListener("click", function(){
@@ -190,7 +177,6 @@ q9.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(8)
-    console.log("worked")
   }
 })
 q10.addEventListener("click", function(){
@@ -198,7 +184,6 @@ q10.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(9)
-    console.log("worked")
   }
 })
 q11.addEventListener("click", function(){
@@ -206,7 +191,6 @@ q11.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(10)
-    console.log("worked")
   }
 })
 q12.addEventListener("click", function(){
@@ -214,7 +198,6 @@ q12.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(11)
-    console.log("worked")
   }
 })
 q13.addEventListener("click", function(){
@@ -222,7 +205,6 @@ q13.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(12)
-    console.log("worked")
   }
 })
 q14.addEventListener("click", function(){
@@ -230,7 +212,6 @@ q14.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(13)
-    console.log("worked")
   }
 })
 q15.addEventListener("click", function(){
@@ -238,7 +219,6 @@ q15.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(14)
-    console.log("worked")
   }
 })
 q16.addEventListener("click", function(){
@@ -246,14 +226,16 @@ q16.addEventListener("click", function(){
     alert("You already did this question!");
   }else{
     startquestion(15)
-    console.log("worked")
   }
 })
   document.getElementById("score").innerHTML = `SCORE:${points}`;
 }
 loadCategories();
 
-
+function checkIfDone(){
+  for (i = 0; questions.length < 16; i++)
+    if 
+}
 
 function correct(){
   Body.innerHTML = "CORRECT!"
