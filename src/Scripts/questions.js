@@ -37,7 +37,7 @@ var questions = [
   },
   {
     qprompt:
-      "Which Pokémon has the highest base stat total (Adding up all the stats from HP to Speed) ?",
+      "Which Pokémon has the highest base stat total (Adding all the stats from HP to Speed) ?",
     c1: "A) Mega Rayquaza",
     c2: "B) Mega Mewtwo X",
     c3: "C) Mega Mewtwo Y",

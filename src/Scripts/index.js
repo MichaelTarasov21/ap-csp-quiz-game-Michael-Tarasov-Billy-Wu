@@ -18,7 +18,7 @@ function startquestion(questionnum){
   Body.insertAdjacentHTML('beforeend', '<button class = "choice" id = "c4">' +questions[questionnum].c4+ '</button>');
   document.getElementById("c1").addEventListener("click", function(){
     if (questions[questionnum].c1 == questions[questionnum].answer){ 
-    console.log("Did it");
+
     points = points + 100;
     correct();
     setTimeout(loadCategories, 1500);
@@ -32,7 +32,6 @@ function startquestion(questionnum){
 })
 document.getElementById("c2").addEventListener("click", function(){
   if (questions[questionnum].c2 == questions[questionnum].answer){ 
-  console.log("Did it");
   points = points + 100;
   correct();
   setTimeout(loadCategories, 1500);
@@ -44,7 +43,6 @@ else{
 })
 document.getElementById("c3").addEventListener("click", function(){
   if (questions[questionnum].c3 == questions[questionnum].answer){ 
-  console.log("Did it");
   points = points + 100;
   correct();
   setTimeout(loadCategories, 1500);
@@ -56,7 +54,6 @@ else{
 })
 document.getElementById("c4").addEventListener("click", function(){
   if (questions[questionnum].c4 == questions[questionnum].answer){ 
-  console.log("Did it");
   points = points + 100;
   correct();
   setTimeout(loadCategories, 1500);
@@ -87,13 +84,13 @@ function loadCategories() {
   for (i = 0; i < 4; i++) {
     document.getElementById(
       `row${i + 2}`
-    ).innerHTML = `<button class="points question" id="q${1 + i}">${
+    ).innerHTML = `<button class="points-question" id="q${1 + i}">${
       1 + i
-    }00</button> <button class="points question" id="q${5 + i}">${
+    }00</button> <button class="points-question" id="q${5 + i}">${
       1 + i
-    }00</button> <button class="points question" id="q${9 + i}">${
+    }00</button> <button class="points-question" id="q${9 + i}">${
       i + 1
-    }00</button> <button class="points question" id="q${13 + i}">${
+    }00</button> <button class="points-question" id="q${13 + i}">${
       1 + i
     }00</button>`;
   }
@@ -232,15 +229,12 @@ q16.addEventListener("click", function(){
 }
 loadCategories();
 
-function checkIfDone(){
-  for (i = 0; questions.length < 16; i++)
-    if 
-}
+
 
 function correct(){
-  Body.innerHTML = "CORRECT!"
+  Body.innerHTML = '<ul id = "correct">✓</ul>'
 }
 
 function wrong(){
-  Body.innerHTML = "WRONG!"
+  Body.innerHTML = '<ul id = "wrong">✘</ul>'
 }
