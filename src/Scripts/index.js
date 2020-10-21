@@ -4,12 +4,32 @@ const category1 = "BASICS";
 const category2 = "STATS";
 const category3 = "COMPETITIVE";
 const category4 = "VALUES";
+const Body = document.body
+
+
+
 function startquestion(questionnum){
-  questions[questionnum].answered = true;
-  points = points + 100
-  loadquestionselectionpage()
+  questions[questionnum].answered == true;
+  Body.innerHTML = "";
+  Body.insertAdjacentHTML('beforeend', '<ul id = "question">' +questions[questionnum].qprompt+ '</ul>');
+  Body.insertAdjacentHTML('beforeend', '<button class = "choice" id = "c1">' +questions[questionnum].c1+ '</button>');
+  Body.insertAdjacentHTML('beforeend', '<button class = "choice" id = "c2">' +questions[questionnum].c2+ '</button>');
+  Body.insertAdjacentHTML('beforeend', '<button class = "choice" id = "c3">' +questions[questionnum].c3+ '</button>');
+  Body.insertAdjacentHTML('beforeend', '<button class = "choice" id = "c4">' +questions[questionnum].c4+ '</button>');
+  document.getElementById("c1").addEventListener("click", function(){
+    if (questions[questionnum].c1 == questions[questionnum].answer){ 
+    console.log("Did it");
+    points = points + 100;
+    correct();
+    setTimeout(loadCategories, 3000);
+  }
+  else{
+    wrong();
+    setTimeout(loadCategories, 3000)
+  }
+})
 }
-function loadquestionselectionpage() {
+function loadCategories() {
   document.body.innerHTML = `<div class="row" id="row1">
     <div class="category">${category1}</div>
     <div class="category">${category2}</div>
@@ -39,26 +59,163 @@ function loadquestionselectionpage() {
       1 + i
     }00</button>`;
   }
-  for (i = 0; i < 16; i++) {
-    if (questions[i].answered){
-      document.getElementById(`q${i+1}`).addEventListener("click", alert("You already tried this question. Please try another one."));
-    } else{
-      document.getElementById(`q${i+1}`).addEventListener("click", startquestion(i));
-    };
-  };
+
   document.getElementById("score").innerHTML = `SCORE:${points}`;
 }
-loadquestionselectionpage();
+loadCategories();
 
-//console.log(questions[0])
 
-//const Body = document.body
+const q1 = document.getElementById("q1")
+const q2 = document.getElementById("q2")
+const q3 = document.getElementById("q3")
+const q4 = document.getElementById("q4")
+const q5 = document.getElementById("q5")
+const q6 = document.getElementById("q6")
+const q7 = document.getElementById("q7")
+const q8 = document.getElementById("q8")
+const q9 = document.getElementById("q9")
+const q10 = document.getElementById("q10")
+const q11 = document.getElementById("q11")
+const q12 = document.getElementById("q12")
+const q13 = document.getElementById("q13")
+const q14 = document.getElementById("q14")
+const q15 = document.getElementById("q15")
+const q16 = document.getElementById("q16")
 
-//const question = document.getElementById("q1").addEventListener("click", function(){
-//    Body.innerHTML = "";
-//    Body.insertAdjacentHTML('beforeend', '<ul class = "question">' +questions[0].qprompt+ '</ul>');
-//    Body.insertAdjacentHTML('beforeend', '<ul class = "choice">' +questions[0].c1+ '</ul>');
-//    Body.insertAdjacentHTML('beforeend', '<ul class = "choice">' +questions[0].c2+ '</ul>');
-//    Body.insertAdjacentHTML('beforeend', '<ul class = "choice">' +questions[0].c3+ '</ul>');
-//    Body.insertAdjacentHTML('beforeend', '<ul class = "choice">' +questions[0].c4+ '</ul>');
-//})
+q1.addEventListener("click", function(){
+  if (questions[0].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(0)
+    console.log("worked")
+  }
+})
+
+q2.addEventListener("click", function(){
+  if (questions[1].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(1)
+    console.log("worked")
+  }
+})
+q3.addEventListener("click", function(){
+  if (questions[2].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(2)
+    console.log("worked")
+  }
+})
+q4.addEventListener("click", function(){
+  if (questions[3].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(3)
+    console.log("worked")
+  }
+})
+q5.addEventListener("click", function(){
+  if (questions[4].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(4)
+    console.log("worked")
+  }
+})
+q6.addEventListener("click", function(){
+  if (questions[5].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(5)
+    console.log("worked")
+  }
+})
+q7.addEventListener("click", function(){
+  if (questions[6].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(6)
+    console.log("worked")
+  }
+})
+q8.addEventListener("click", function(){
+  if (questions[7].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(7)
+    console.log("worked")
+  }
+})
+q9.addEventListener("click", function(){
+  if (questions[8].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(8)
+    console.log("worked")
+  }
+})
+q10.addEventListener("click", function(){
+  if (questions[9].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(9)
+    console.log("worked")
+  }
+})
+q11.addEventListener("click", function(){
+  if (questions[10].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(10)
+    console.log("worked")
+  }
+})
+q12.addEventListener("click", function(){
+  if (questions[11].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(11)
+    console.log("worked")
+  }
+})
+q13.addEventListener("click", function(){
+  if (questions[12].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(12)
+    console.log("worked")
+  }
+})
+q14.addEventListener("click", function(){
+  if (questions[13].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(13)
+    console.log("worked")
+  }
+})
+q15.addEventListener("click", function(){
+  if (questions[14].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(14)
+    console.log("worked")
+  }
+})
+q16.addEventListener("click", function(){
+  if (questions[15].answered){
+    alert("You already did this question!")
+  }else{
+    startquestion(15)
+    console.log("worked")
+  }
+})
+
+function correct(){
+  Body.innerHTML = "CORRECT!"
+}
+
+function wrong(){
+  Body.innerHTML = "WRONG!"
+}
