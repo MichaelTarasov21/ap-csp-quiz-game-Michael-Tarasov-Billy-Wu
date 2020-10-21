@@ -4,65 +4,79 @@ const category1 = "BASICS";
 const category2 = "STATS";
 const category3 = "COMPETITIVE";
 const category4 = "VALUES";
-const Body = document.body
+const Body = document.body;
 
-
-
-function startquestion(questionnum){
+function startquestion(questionnum) {
   questions[questionnum].answered = true;
   Body.innerHTML = "";
-  Body.insertAdjacentHTML('beforeend', '<ul id = "question">' +questions[questionnum].qprompt+ '</ul>');
-  Body.insertAdjacentHTML('beforeend', '<button class = "choice" id = "c1">' +questions[questionnum].c1+ '</button>');
-  Body.insertAdjacentHTML('beforeend', '<button class = "choice" id = "c2">' +questions[questionnum].c2+ '</button>');
-  Body.insertAdjacentHTML('beforeend', '<button class = "choice" id = "c3">' +questions[questionnum].c3+ '</button>');
-  Body.insertAdjacentHTML('beforeend', '<button class = "choice" id = "c4">' +questions[questionnum].c4+ '</button>');
-  document.getElementById("c1").addEventListener("click", function(){
-    if (questions[questionnum].c1 == questions[questionnum].answer){ 
-
-    points = points + 100;
-    correct();
-    setTimeout(loadCategories, 1500);
-
-  }
-  else{
-    wrong();
-    setTimeout(loadCategories, 1500)
-
-  }
-})
-document.getElementById("c2").addEventListener("click", function(){
-  if (questions[questionnum].c2 == questions[questionnum].answer){ 
-  points = points + 100;
-  correct();
-  setTimeout(loadCategories, 1500);
-}
-else{
-  wrong();
-  setTimeout(loadCategories, 1500)
-}
-})
-document.getElementById("c3").addEventListener("click", function(){
-  if (questions[questionnum].c3 == questions[questionnum].answer){ 
-  points = points + 100;
-  correct();
-  setTimeout(loadCategories, 1500);
-}
-else{
-  wrong();
-  setTimeout(loadCategories, 1500)
-}
-})
-document.getElementById("c4").addEventListener("click", function(){
-  if (questions[questionnum].c4 == questions[questionnum].answer){ 
-  points = points + 100;
-  correct();
-  setTimeout(loadCategories, 1500);
-}
-else{
-  wrong();
-  setTimeout(loadCategories, 1500)
-}
-})
+  Body.insertAdjacentHTML(
+    "beforeend",
+    '<ul id = "question">' + questions[questionnum].qprompt + "</ul>"
+  );
+  Body.insertAdjacentHTML(
+    "beforeend",
+    '<button class = "choice" id = "c1">' +
+      questions[questionnum].c1 +
+      "</button>"
+  );
+  Body.insertAdjacentHTML(
+    "beforeend",
+    '<button class = "choice" id = "c2">' +
+      questions[questionnum].c2 +
+      "</button>"
+  );
+  Body.insertAdjacentHTML(
+    "beforeend",
+    '<button class = "choice" id = "c3">' +
+      questions[questionnum].c3 +
+      "</button>"
+  );
+  Body.insertAdjacentHTML(
+    "beforeend",
+    '<button class = "choice" id = "c4">' +
+      questions[questionnum].c4 +
+      "</button>"
+  );
+  document.getElementById("c1").addEventListener("click", function () {
+    if (questions[questionnum].c1 == questions[questionnum].answer) {
+      points = points + (100*(questionnum%4) + 100);
+      correct();
+      setTimeout(loadCategories, 1500);
+    } else {
+      wrong();
+      setTimeout(loadCategories, 1500);
+    }
+  });
+  document.getElementById("c2").addEventListener("click", function () {
+    if (questions[questionnum].c2 == questions[questionnum].answer) {
+      points = points + (100*(questionnum%4) + 100);
+      correct();
+      setTimeout(loadCategories, 1500);
+    } else {
+      wrong();
+      setTimeout(loadCategories, 1500);
+    }
+  });
+  document.getElementById("c3").addEventListener("click", function () {
+    if (questions[questionnum].c3 == questions[questionnum].answer) {
+      points = points + (100*(questionnum%4) + 100);
+      correct();
+      setTimeout(loadCategories, 1500);
+    } else {
+      wrong();
+      setTimeout(loadCategories, 1500);
+    }
+  });
+  document.getElementById("c4").addEventListener("click", function () {
+    if (questions[questionnum].c4 == questions[questionnum].answer) {
+      points = points + (100*(questionnum%4) + 100);
+      correct();
+      setTimeout(loadCategories, 1500);
+    } else {
+      wrong();
+      setTimeout(loadCategories, 1500);
+    }
+  });
 }
 function loadCategories() {
   document.body.innerHTML = `<div class="row" id="row1">
@@ -111,130 +125,127 @@ function loadCategories() {
   const q15 = document.getElementById("q15");
   const q16 = document.getElementById("q16");
 
-  q1.addEventListener("click", function(){
-    if (questions[0].answered){
+  q1.addEventListener("click", function () {
+    if (questions[0].answered) {
       alert("You already did this question!");
-    }else{
-     startquestion(0)
-;
+    } else {
+      startquestion(0);
     }
-  })
+  });
 
-q2.addEventListener("click", function(){
-  if (questions[1].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(1)
-  }
-})
-q3.addEventListener("click", function(){
-  if (questions[2].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(2)
-  }
-})
-q4.addEventListener("click", function(){
-  if (questions[3].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(3)
-  }
-})
-q5.addEventListener("click", function(){
-  if (questions[4].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(4)
-  }
-})
-q6.addEventListener("click", function(){
-  if (questions[5].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(5)
-  }
-})
-q7.addEventListener("click", function(){
-  if (questions[6].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(6)
-  }
-})
-q8.addEventListener("click", function(){
-  if (questions[7].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(7)
-  }
-})
-q9.addEventListener("click", function(){
-  if (questions[8].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(8)
-  }
-})
-q10.addEventListener("click", function(){
-  if (questions[9].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(9)
-  }
-})
-q11.addEventListener("click", function(){
-  if (questions[10].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(10)
-  }
-})
-q12.addEventListener("click", function(){
-  if (questions[11].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(11)
-  }
-})
-q13.addEventListener("click", function(){
-  if (questions[12].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(12)
-  }
-})
-q14.addEventListener("click", function(){
-  if (questions[13].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(13)
-  }
-})
-q15.addEventListener("click", function(){
-  if (questions[14].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(14)
-  }
-})
-q16.addEventListener("click", function(){
-  if (questions[15].answered){
-    alert("You already did this question!");
-  }else{
-    startquestion(15)
-  }
-})
+  q2.addEventListener("click", function () {
+    if (questions[1].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(1);
+    }
+  });
+  q3.addEventListener("click", function () {
+    if (questions[2].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(2);
+    }
+  });
+  q4.addEventListener("click", function () {
+    if (questions[3].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(3);
+    }
+  });
+  q5.addEventListener("click", function () {
+    if (questions[4].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(4);
+    }
+  });
+  q6.addEventListener("click", function () {
+    if (questions[5].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(5);
+    }
+  });
+  q7.addEventListener("click", function () {
+    if (questions[6].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(6);
+    }
+  });
+  q8.addEventListener("click", function () {
+    if (questions[7].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(7);
+    }
+  });
+  q9.addEventListener("click", function () {
+    if (questions[8].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(8);
+    }
+  });
+  q10.addEventListener("click", function () {
+    if (questions[9].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(9);
+    }
+  });
+  q11.addEventListener("click", function () {
+    if (questions[10].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(10);
+    }
+  });
+  q12.addEventListener("click", function () {
+    if (questions[11].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(11);
+    }
+  });
+  q13.addEventListener("click", function () {
+    if (questions[12].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(12);
+    }
+  });
+  q14.addEventListener("click", function () {
+    if (questions[13].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(13);
+    }
+  });
+  q15.addEventListener("click", function () {
+    if (questions[14].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(14);
+    }
+  });
+  q16.addEventListener("click", function () {
+    if (questions[15].answered) {
+      alert("You already did this question!");
+    } else {
+      startquestion(15);
+    }
+  });
   document.getElementById("score").innerHTML = `SCORE:${points}`;
 }
 loadCategories();
 
-
-
-function correct(){
-  Body.innerHTML = '<ul id = "correct">✓</ul>'
+function correct() {
+  Body.innerHTML = '<ul id = "correct">✓</ul>';
 }
 
-function wrong(){
-  Body.innerHTML = '<ul id = "wrong">✘</ul>'
+function wrong() {
+  Body.innerHTML = '<ul id = "wrong">✘</ul>';
 }
