@@ -109,3 +109,10 @@ body {
   color: red;
   margin: auto;
 }
+
+.completion {
+  text-align: center;
+  color: yellow;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: -1.25px -1.25px 0 blue, 1.25px -1.25px 0 blue, -1.25px 1.25px 0 blue, 1.25px 1.25px 0 blue;
+}

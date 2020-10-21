@@ -92,8 +92,8 @@ function startquestion(questionnum) {
 function loadCategories() {
   checkforcompletion();
   if (complete) {
-    document.body.innerHTML = `<div>YOU HAVE FINISHED THE QUIZ!!!</div>
-    Your score is ${points} out of 4000.`;
+    document.body.innerHTML = `<div class = completion>YOU HAVE FINISHED THE QUIZ!!!
+    Your score is ${points} out of 4000.</div>`;
   } else {
     document.body.innerHTML = `<div class="row" id="row1">
     <div class="category">${category1}</div>
