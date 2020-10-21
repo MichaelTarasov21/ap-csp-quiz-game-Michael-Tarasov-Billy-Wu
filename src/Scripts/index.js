@@ -1,11 +1,22 @@
 import { questions } from "./questions.js";
 var points = 0;
+var complete = false;
 const category1 = "BASICS";
 const category2 = "STATS";
 const category3 = "COMPETITIVE";
 const category4 = "VALUES";
 const Body = document.body;
-
+function checkforcompletion() {
+  complete = true;
+  let i;
+  for (i = 0; i < 16; i++) {
+    if (questions[i].answered) {
+      console.log(`question ${i + 1} complete`);
+    } else {
+      complete = false;
+    }
+  }
+}
 function startquestion(questionnum) {
   questions[questionnum].answered = true;
   Body.innerHTML = "";
@@ -39,7 +50,7 @@ function startquestion(questionnum) {
   );
   document.getElementById("c1").addEventListener("click", function () {
     if (questions[questionnum].c1 == questions[questionnum].answer) {
-      points = points + (100*(questionnum%4) + 100);
+      points = points + (100 * (questionnum % 4) + 100);
       correct();
       setTimeout(loadCategories, 1500);
     } else {
@@ -49,7 +60,7 @@ function startquestion(questionnum) {
   });
   document.getElementById("c2").addEventListener("click", function () {
     if (questions[questionnum].c2 == questions[questionnum].answer) {
-      points = points + (100*(questionnum%4) + 100);
+      points = points + (100 * (questionnum % 4) + 100);
       correct();
       setTimeout(loadCategories, 1500);
     } else {
@@ -59,7 +70,7 @@ function startquestion(questionnum) {
   });
   document.getElementById("c3").addEventListener("click", function () {
     if (questions[questionnum].c3 == questions[questionnum].answer) {
-      points = points + (100*(questionnum%4) + 100);
+      points = points + (100 * (questionnum % 4) + 100);
       correct();
       setTimeout(loadCategories, 1500);
     } else {
@@ -69,7 +80,7 @@ function startquestion(questionnum) {
   });
   document.getElementById("c4").addEventListener("click", function () {
     if (questions[questionnum].c4 == questions[questionnum].answer) {
-      points = points + (100*(questionnum%4) + 100);
+      points = points + (100 * (questionnum % 4) + 100);
       correct();
       setTimeout(loadCategories, 1500);
     } else {
@@ -79,6 +90,12 @@ function startquestion(questionnum) {
   });
 }
 function loadCategories() {
+  checkforcompletion();
+  if (complete){
+    document.body.innerHTML = `<div>YOU HAVE FINISHED THE QUIZ!!!</div>
+    Your score is ${points} out of 4000.`
+
+  }  else{
   document.body.innerHTML = `<div class="row" id="row1">
     <div class="category">${category1}</div>
     <div class="category">${category2}</div>
@@ -239,7 +256,7 @@ function loadCategories() {
     }
   });
   document.getElementById("score").innerHTML = `SCORE:${points}`;
-}
+}}
 loadCategories();
 
 function correct() {
