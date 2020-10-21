@@ -23,7 +23,7 @@ var questions = [
     c2: "B) No",
     c3: "C) No but he can when he evolves",
     c4: "D) Yes but he can only use it in combat",
-    answer: "B) No",
+    answer: "A) Yes",
     answered: false,
   },
   {
